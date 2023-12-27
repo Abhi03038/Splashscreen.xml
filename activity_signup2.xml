@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/reddBD"
+    tools:context=".Signup2">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="153dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/abhaya_libre_medium"
+        android:text=" Meeba"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="390dp"
+        android:layout_height="490dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/wallpapershape" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="Create an account"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="Sign up to continue"
+        android:textColor="#8C8E8C"
+        app:layout_constraintBottom_toTopOf="@+id/SignupEmail"
+        app:layout_constraintEnd_toEndOf="@+id/SignupEmail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/SignupEmail" />
+
+    <EditText
+        android:id="@+id/SignupEmail"
+        android:layout_width="325dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edittextshape"
+        android:drawableLeft="@android:drawable/sym_action_email"
+        android:drawablePadding="15dp"
+        android:elevation="5dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/SignupPassword"
+        app:layout_constraintEnd_toEndOf="@+id/SignupPassword"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/SignupPassword" />
+
+    <EditText
+        android:id="@+id/SignupPassword"
+        android:layout_width="325dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edittextshape"
+        android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+        android:drawablePadding="15dp"
+        android:elevation="5dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintEnd_toEndOf="@id/textView9"
+        app:layout_constraintStart_toStartOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="or"
+        app:layout_constraintBottom_toTopOf="@+id/Google"
+        app:layout_constraintEnd_toEndOf="@+id/Google"
+        app:layout_constraintStart_toStartOf="@+id/Google" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Google"
+        android:layout_width="325dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/buttonshape"
+        android:backgroundTint="#CACACA"
+        android:drawableLeft="@drawable/googleg_standard_color_18"
+        android:paddingLeft="20dp"
+        android:paddingRight="40dp"
+        android:text="Google"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/GetStarted2"
+        app:layout_constraintEnd_toEndOf="@+id/GetStarted2"
+        app:layout_constraintStart_toStartOf="@+id/GetStarted2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/GetStarted2"
+        android:layout_width="325dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/buttonshape"
+        android:backgroundTint="@color/greenFF"
+        android:text="Get Started"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
