@@ -1,1 +1,1 @@
-# Splashscreen.xml
+# layout.xml
